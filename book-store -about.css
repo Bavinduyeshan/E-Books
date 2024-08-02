@@ -1,0 +1,142 @@
+
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    font-family: 'poppins';
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    
+}
+.icon{
+    width: 58px;
+    float: left;
+    height: 70px;
+}
+
+.logo img{
+    width:58px;
+
+    
+}
+
+
+.tabs{
+    width: 100%;
+    height: 60px;
+    float: left;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: #383f47;
+    
+    backdrop-filter: blur(2px);
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left:62px ;
+    margin-top: 27px;
+    font-size: 17px;
+    justify-content: space-around;
+    
+}
+ul li a{
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgb(223, 220, 220);
+  transition: 0.4s  ease-in-out;
+  position: relative;
+}
+ul li a::after{
+    content: "";
+    position: absolute;
+    background-color: #ff7200;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+ul li a:hover::after{
+    width: 100%;
+}
+ul li a:hover{
+    
+    color:#a363aa;
+}
+.row{
+    width: 80%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    overflow-x:     hidden;
+    padding: 5rem 0;
+}
+.row .imgwrapper{
+    overflow: hidden;
+}
+.row .imgwrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+.row .imgwrapper:hover img{
+    transform: scale(1.25);
+}
+
+.row .contentwrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.row .contentwrapper span.textwrapper{
+    display: block;
+    font-size: 30px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    color:#a363aa;
+}
+.row .contentwrapper span.textwrapper span{
+    display: inline-block;
+    background:  #a363aa;
+    width: 70px;
+    height:     5px;
+}
+.row .contentwrapper h2{
+    font-size: 40px;
+    font-weight: 700;
+    color:  #383f47;
+    padding-bottom: 20px;
+
+}
+
+.row .contentwrapper p{
+    font-size: 16px;
+    line-height: 25px;
+    padding-bottom: 25px;
+}
+ 

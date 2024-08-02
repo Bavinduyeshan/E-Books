@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-store Contact </title>
+    <link rel="stylesheet" href="book-stote-contact.css">
+    <script defer src="e-book.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="menu">
+            <div class="icon">
+                <div class="logo" >
+                    <img src="images/book store.jpeg">
+                </div>
+            </div>
+            <ul>
+                <li><a href="book-store.html">HOME</a></li>
+                <li><a href="book-store-about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+        </div>
+       <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                <div class="contact-left-title">
+                    <h2>Contact-us</h2>
+                    <hr>
+                </div>
+                <input type="hidden" name="access_key" value="d341bf3d-d8fa-4822-953d-ac9ae66592a1">
+
+                <input type="text"name="name" placeholder="your name" class="contact-inputs" required>
+                <input type="email"name="email" placeholder="your email" class="contact-inputs" required>
+                <textarea name="message" placeholder="your message" class="contact-inputs" required></textarea>
+                <button type="submit">submit</button>
+            </form>
+            <div class="contact-right">
+                <img src="images/right_img.png">
+            </div>
+       </div>
+        
+        
+       
+    </div>
+</body>
+</html>
